@@ -1,24 +1,138 @@
 body {
-  background-color: #e4e3e3;
+  background: linear-gradient(#09203F, #9198e5);
 }
 
 .App {
   text-align: center;
+  min-height: 100vh;
+  border-radius: 30px;
 }
 
 h1 {
-  background-color: #050505;
+  background-color: #ffffff ;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+  font-family: FreeMono, monospace;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+P{
+  background-color: #ffffff ;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: FreeMono, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: white;
+  }
+ form input {
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: .5rem;
+  height: 1.8rem;
+  width: 20%;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+ }
+ p {
+  color: #ffffff;
+ }
+ .App{
+  background: linear-gradient(#345886, #bec1e3);
+ }
+ form button {
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 10px;
+  padding-inline: 1rem;
+  width: 6%;
+  min-width: 4.5rem;
+  transition: 0.2s;
+  background-color: rgb(255, 255, 255);
+}
+}
+
+.summary{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.summary p{
+  padding-top:15px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.tiles {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  
+}
+
+
+.Results {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tiles > div{
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.tiles img{
+  margin-top:20px;
+}
+
+.Results p{
+  font-size:20px;
 }
 
 
 
+form {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
 
+form input {
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: .5rem;
+  height: 1.8rem;
+  width: 20%;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+}
 
+form button {
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 10px;
+  padding-inline: 1rem;
+  width: 6%;
+  min-width: 4.5rem;
+  transition: 0.2s;
+}
 
+form button:hover{
+  cursor: pointer;
+  transition: 0.2s;
+  scale: 0.98;
+
+}
 
 
